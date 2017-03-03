@@ -1,4 +1,4 @@
-# crawling_emulator
+# Crawling_emulator
 Crawling from emulator and use pytesseract to image processing
 #Pyautogui for automation
 Install pyautogui
@@ -22,6 +22,9 @@ pyautogui.screenshot(nama)
 img = Image.open(nama)
 img2 = img.crop((570, 374, 788, 410))
 img2.save(nama)
+```
+Convert image to string
+```bash
 varnum = pytesseract.image_to_string(Image.open(nama))
 varnum = str(varnum)
 print varnum
