@@ -5,6 +5,10 @@ Install pyautogui
 ```bash
 pip install pyautogui
 ```
+Open Genymotion Emulator using os library
+```bash
+os.system("/opt/genymobile/genymotion/player --args --vm-name 7ac12b95-d01f-4e20-aa10-3766bd1d9e22")
+```
 For automated click, must crop image and save it in same directory with source code
 ```bash
 x,y = pyautogui.locateCenterOnScreen('friend.png')
@@ -31,3 +35,13 @@ print varnum
 ```
 #Tools
 Using genymotion emulator
+
+##Running engine
+Open Genymotion
+```bash
+python2.7 lineapp.py
+```
+Automation and convert image to string
+```bash
+python2.7 click.py
+```
